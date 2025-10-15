@@ -22,9 +22,9 @@ function App() {
         </div>
         <div >
           <Routes>
-            <Route path="/" element={<Navigate to="/home" />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/productos" element={<Productos />} />
+            {/*<Route path="/" element={<Navigate to="/home" />} />
+            <Route path="/home" element={<Home />} />*/}
+            <Route path="/productos/categoria/:categoria" element={<Productos />} />
             <Route path="/carrito" element={<Carrito />} />
           </Routes>
         </div>

@@ -25,10 +25,13 @@ const Carrito = () => {
             <Row>
                 {
                     carrito.map((item) => (
-                        <Col md={12}>
-                            <Card className="mb-3 d-flex justify-content-between align-items-center" key={item.id}>
-                                <Card.Img src={item.imagen} style={{width:"120px"}}/>
-                                <Card.Body> {item.nombre} - ${item.precio} - cantidad {item.cantidad}</Card.Body>
+                        <Col lg={12}>
+                            <Card className="mb-3" key={item.id}>
+                                <Container className='d-flex justify-content-between align-items-center'>
+                                    <Card.Img src={item.imagen} style={{width:"80px"}}/>
+                                    <Card.Body className='p-3'> {item.nombre} - cantidad {item.cantidad}</Card.Body>
+                                    <Card.Footer className='p-3'>${item.precio}</Card.Footer>
+                                </Container>
                             </Card>
                         </Col>
                     ))

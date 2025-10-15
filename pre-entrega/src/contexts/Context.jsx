@@ -35,11 +35,20 @@ export function ContextProvider({ children }) {
             if (productoExistente) {
                 return prevCarrito.map(item =>
                     item.id === producto.id
-                        ? { ...item, cantidad: item.cantidad + 1, precioTotal: (item.cantidad + 1) * item.precio }
+                        ? { 
+                            ...item, 
+                            cantidad: item.cantidad + 1, 
+                            precioTotal: (item.cantidad + 1) * Number(item.precio) }
                         : item
                 );
             } else {
-                return [...prevCarrito, { ...producto, cantidad: 1, precioTotal: producto.precio }];
+                return [
+                    ...prevCarrito, 
+                    { 
+                        ...producto,
+                        cantidad: 1, 
+                        precioTotal: Number(producto.precio) 
+                    }];
             }
         });
     };
@@ -53,4 +62,4 @@ export function ContextProvider({ children }) {
     );
 }
 
-export { DataContext };/*[...carrito, producto]*/
+export { DataContext };

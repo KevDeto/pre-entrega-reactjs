@@ -7,7 +7,6 @@ const Carrito = () => {
     const { carrito, limpiarCarrito } = useCarrito();
     const [compraRealizada, setCompraRealizada] = useState(false);
 
-
     const totalGeneral = useMemo(() => {
         return carrito.reduce((sum, item) => sum + item.precioTotal, 0);
     }, [carrito]);

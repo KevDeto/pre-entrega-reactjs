@@ -1,0 +1,48 @@
+.carrito .row .col .card{
+    background-color: transparent;
+    border: solid 1px white;
+    color: white;
+}
+
+.carrito .row .col .card-container-header{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.carrito .card-container-body{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.carrito .row .col .card .card-text,
+.carrito h3{
+    color: #f0a500;
+}
+
+.carrito-comprado .alert{
+    background-color: transparent;
+    border: solid 1px #f0a500;
+    color: white;
+}
+
+.carrito-comprado .alert .btn{
+    background-color: #f0a500;
+    border: none;
+    color: #131313;
+    font-weight: bold;
+}
+
+.carrito .card-carrito-vacio{
+    background-color: transparent;
+    border: solid 1px #f0a500;
+    color: white;
+}
+
+.carrito .card-carrito-vacio .btn{
+    background-color: #f0a500;
+    border: none;
+    color: #131313;
+    font-weight: bold;
+}

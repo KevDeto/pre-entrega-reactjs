@@ -1,0 +1,30 @@
+.productos .card {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.productos .card .card-header,
+.productos .card .card-body,
+.productos .card .card-footer {
+    color: white;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.productos .card .btn{
+    color: white;
+    background-color: transparent !important;
+    border: solid 1px #f0a500 !important;
+}
+
+.productos .card .btn:hover {
+    background-color: transparent !important;
+    border-color: #ffc107 !important;
+    color: #ffc107 !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.productos .card .btn:focus{
+   color: white !important;
+}

@@ -1,0 +1,37 @@
+.home-container .card{
+    background-color: transparent;
+    border: solid 1px #f0a500;
+    color: white;
+    transition: border 0.3s;
+}
+
+.home-container .card .card-body{
+    padding: 3rem;
+}
+
+.navbar-container .nav-link,
+.navbar-container .navbar-brand{
+    color: white !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.navbar-container .nav-link:hover{
+    color: #f0a500 !important;
+}
+
+.navbar-container .dropdown-menu{    
+    background-color: #131313;
+}
+
+.navbar-container .dropdown-item{
+    color: white !important;
+    transition: color 0.3s;
+}
+
+.navbar-container .dropdown-item:hover {
+    color: #f0a500 !important;
+    background-color: #131313 !important;
+}

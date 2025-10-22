@@ -3,8 +3,8 @@ import { Container } from 'react-bootstrap';
 
 const Header = () => {
     return ( 
-        <Container className='my-4 header'>
-            <h1>Listado de Productos</h1>
+        <Container className='my-4 header-container'>
+            <h1>MINI-SUPER</h1>
         </Container>
     );
 }
